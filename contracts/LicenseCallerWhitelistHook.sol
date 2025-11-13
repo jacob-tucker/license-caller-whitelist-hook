@@ -178,7 +178,6 @@ contract LicenseCallerWhitelistHook is BaseModule, AccessControlled, ILicensingH
     /// @notice This function is called when the LicensingModule calculates/predict the minting fee for license tokens.
     /// @dev The hook should guarantee the minting fee calculation is correct and return the minting fee which is
     /// the exact same amount with returned by beforeMintLicenseTokens().
-    /// The hook should revert if the minting fee calculation is not allowed.
     /// @param caller The address of the caller who calling the mintLicenseTokens() function.
     /// @param licensorIpId The ID of licensor IP from which issue the license tokens.
     /// @param licenseTemplate The address of the license template.
